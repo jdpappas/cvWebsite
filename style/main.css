@@ -1,0 +1,56 @@
+body {
+    font-size: large;  
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    background-color: #275786;
+    text-align: right;
+    padding: 10px;
+}
+
+header p {
+    margin: 0px;   
+}
+
+
+#leftSection {
+    float: left;
+    background-color: #345;
+}
+
+#rightSection {
+    float: left;
+    background-color: #789;
+}
+
+
+footer {
+    color: #fff;
+    background-color: #275786; 
+    clear: both;
+}
+
+#cvPhoto {
+    margin: 0px;  
+    padding: 0px;
+}
+
+
+nav ul {
+    padding: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
