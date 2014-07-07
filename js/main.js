@@ -2,15 +2,14 @@ $(document).ready(function() {
 
     // Declare some vars
     var $navSection = $('nav'),
-        $navOptions = $navSection.find('ul li a'),
-        $mainSection = $('main');
+        $navOptions = $navSection.find('ul li'),
+        $tabContent = $('#tabContent');
 
     $navOptions.click(function(event){
-        event.preventDefault($navOptions);
         
         var $self = $(this);
-        $mainSection.find('.tab_content').hide();
-        $mainSection.find('.tab_content').eq($navOptions.index($self)).toggle();
+        $tabContent.find('.selected_content').hide();
+        $tabContent.find('.selected_content').eq($navOptions.index($self)).fadeToggle();
     });
         
     
@@ -26,7 +25,7 @@ $(document).ready(function() {
             // We use the retrievedData array to check later if all the requested data are retrieved
             retrievedData.push($.ajax(href) 
                 .done(function(data){
-                    tmpContent[index] = '<div class="tab_content hide">' + data + '</div>';
+                    tmpContent[index] = '<div class="selected_content">' + data + '</div>';
                     })
                 .fail(function() {
                     console.log("Couldn't load content for: " + href);
@@ -35,11 +34,11 @@ $(document).ready(function() {
        
        // when all the AJAX requests are successful the .done handler is executed.
        $.when.apply($, retrievedData).done(function() {
-            $mainSection.html(tmpContent.join(''));
+            $tabContent.html(tmpContent.join(''));
             
             // Makes the contents of the tab that appears at the beginning to be displayed.
-            $mainSection.find('.tab_content').hide();           
-            $mainSection.find('.tab_content').eq(0).show();
+            $tabContent.find('.selected_content').hide();           
+            $tabContent.find('.selected_content').eq(0).show();
 
         });
         
