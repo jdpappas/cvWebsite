@@ -6,56 +6,62 @@ body {
     padding: 0px;
 }
 
-header {
-    margin: 0px auto;
-    margin-top: 40px;
-    max-width: 910px; 
-    min-width: 910px; 
-    font-family: 'Oswald', sans-serif;
-    font-size: 3em;
-    color: #275786;
-    text-align: right;
-}
-
-header p {
-    margin: 0px;
-    padding-right: 20px;
-}
-
 main {
     margin: 40px auto;
-    max-width: 910px; 
-    min-width: 910px; 
+    max-width: 1060px; 
+    min-width: 1060px; 
     min-height: 650px;
     overflow: auto;
 }
 
 #leftSection {
     float: left;
-    min-width: 200px; 
-    max-width: 200px; 
-    padding-left: 5px;
+    margin-right: 20px;
+    min-width: 330px; 
+    max-width: 330px; 
+    text-align: right;
+}
+
+#upperSection, #rightSection {
+    float: right;
+    margin: 0px;
+    max-width: 700px;
+    min-width: 700px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.8px;
+    border-right-style: solid;
+    border-right-width: 1.9px;
+    border-radius: 10px;
+}
+
+#upperSection {
+    min-height: 378px;
+    margin-bottom: 20px;
+    background-color: #fcfcfc;
+    border-bottom-color: #ebebeb;
+    border-right-color: #ebebeb;
 }
 
 #rightSection {
-    float: left;
-    margin: 0px;
+    background-color: #fcfcfc;
+    border-bottom-color: #ebebeb;
+    border-right-color: #ebebeb;
     padding-bottom: 10px;
-    max-width: 700px;
-    min-width: 700px;
-    background-color: #d3e6f7;
-    border-bottom-style: solid;
-    border-bottom-width: 1.8px;
-    border-bottom-color: #b1c4db;
-    border-right-style: solid;
-    border-right-width: 1.9px;
-    border-right-color: #b1c4db;
-    border-radius: 10px;
+    padding-top: 10px;
 }
 
 #tabContent {
     margin: 0px 10px;
     padding: 0px;
+}
+
+#name {
+    margin: 0px;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: #275786;
+    text-align: right;
 }
 
 footer {
@@ -66,6 +72,7 @@ footer {
     padding: 50px;
 }
 
+
 /* ------------------------------------------------------------------------------------------------- */
 
 #cvPhoto {
@@ -74,7 +81,12 @@ footer {
     border-radius: 10px;
 }
 
+
 /* Navigation panel Formatting ------------------------------------------------------------------------------------------------- */
+nav {
+    display: inline-block;
+}
+
 nav ul {
     width: 180px;
     background-color: #d3e6f7;
@@ -101,23 +113,20 @@ nav ul li a {
     cursor: default;
 }
 
-nav ul li:hover a {
+.currentSelectionStyle {
     color: #fff;
-}
-
-nav ul li:hover {
     background-color: #b0d0f2;
     border-top-style: solid;
     border-top-width: 1.5px;
     border-top-color: #9bb8d9;
 }
 
-nav ul li:nth-of-type(1):hover {
+.currentSelectionCurvedCornersUp {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-nav ul li:nth-last-of-type(1):hover {
+.currentSelectionCurvedCornersDown {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -125,18 +134,20 @@ nav ul li:nth-last-of-type(1):hover {
 /* Headers Formatting ------------------------------------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;      
+    font-family: 'Oswald', sans-serif; 
 }
 
 h1 {
     margin-top: 0px;
     font-size: 2em;
+    text-align: center;
 }
 
 h2 {
     margin-top: 10px;
     font-size: 1.5em;
 }
+
 
 /* Table Formatting ------------------------------------------------------------------------------------------------- */
 table {
@@ -156,6 +167,7 @@ th {
     padding-right: 10px;
 }
 
+
 /* List Formatting ------------------------------------------------------------------------------------------------- */
  ul {
     padding: 0px;
@@ -167,10 +179,6 @@ ul li {
 
 
 /* Tab Content Formatting ------------------------------------------------------------------------------------------------- */
-#tabContent {
-    
-}
-
 #tabContent li {
     margin-top: 5px;
 }
