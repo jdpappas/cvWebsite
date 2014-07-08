@@ -1,7 +1,7 @@
 body {
     font-size: large;  
     font-family: 'Ubuntu', sans-serif;
-    color: #275786;
+    color: #6369a5;
     margin: 0px;
     padding: 0px;
 }
@@ -81,6 +81,23 @@ footer {
     border-radius: 10px;
 }
 
+.linkStyle {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #fcfcfc;
+}
+
+.linkStyle:hover {
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 10px;
+    border-top-style: solid;
+    border-top-width: 1.5px;
+    border-top-color: #bfbfbf;
+    border-left-style: solid;
+    border-left-width: 1.5px;
+    border-left-color: #bfbfbf;
+}
 
 /* Navigation panel Formatting ------------------------------------------------------------------------------------------------- */
 nav {
@@ -89,13 +106,13 @@ nav {
 
 nav ul {
     width: 180px;
-    background-color: #d3e6f7;
+    background-color: #fcfcfc;
     border-bottom-style: solid;
     border-bottom-width: 1.5px;
-    border-bottom-color: #b1c4db;
+    border-bottom-color: #bfbfbf;
     border-right-style: solid;
     border-right-width: 1.5px;
-    border-right-color: #b1c4db;
+    border-right-color: #bfbfbf;
     border-radius: 10px;
 }
 
@@ -103,6 +120,9 @@ nav ul li {
     padding: 5px 10px;
     font-size: 1em;
     cursor: pointer;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #fcfcfc;
 }
 
 nav ul li a {
@@ -115,10 +135,10 @@ nav ul li a {
 
 .currentSelectionStyle {
     color: #fff;
-    background-color: #b0d0f2;
+    background-color: #eee;
     border-top-style: solid;
     border-top-width: 1.5px;
-    border-top-color: #9bb8d9;
+    border-top-color: #bfbfbf;
 }
 
 .currentSelectionCurvedCornersUp {
@@ -193,4 +213,8 @@ ul li {
     line-height: 1.5em;
     font-size: 0.7em;
     font-weight: normal;
+}
+
+#tabContent li span {
+    display: block;
 }
